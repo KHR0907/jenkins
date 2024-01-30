@@ -10,4 +10,9 @@ public class BlogConrtoller {
     public String getPage() {
         return "/index";
     }
+
+    @GetMapping("/ttt")
+    public String aaa() {
+        return "/lll";
+    }
 }

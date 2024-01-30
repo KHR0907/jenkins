@@ -7,11 +7,10 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.web.WebApplicationInitializer;
 
-@SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
-public class Blog2Application extends SpringBootServletInitializer implements WebApplicationInitializer {
+@SpringBootApplication
+public class Blog2Application extends SpringBootServletInitializer{
 
 
-    @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(Blog2Application.class);
     }
